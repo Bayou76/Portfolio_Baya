@@ -1,0 +1,21 @@
+[
+    {
+        "title": "Stagiaire développeur web",
+        "company": "Délices Pizzas, Gacé",
+        "dates": "Sep 2022 - Oct 2022",
+        "description": [
+            "1er stage (5 semaines) : Réalisation du cahier de charge et développement du site de A à Z côté Front.",
+            "2ème stage (5 semaines) : développement des fonctionnalités, côté Back-end"
+        ]
+    },
+    {
+        "title": "Aide-comptable",
+        "company": "Cabinet d’expertise comptable B.Boulanger, Rouen",
+        "dates": "Déc 2018 - Déc 2019",
+        "description": [
+            "Facturation",
+            "Rapprochement bancaire",
+            "Utilisation du logiciel de comptabilité"
+        ]
+    }
+]

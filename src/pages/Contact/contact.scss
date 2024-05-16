@@ -1,0 +1,88 @@
+@import '../../sass/main.scss';
+
+.contact-container {
+    background-color: $primary-color;
+    color: $highlight-color;
+    padding: $padding;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+    animation: fadeIn 1s ease forwards;
+
+    h1 {
+        font-size: $title-font-size;
+        margin-bottom: $item-vertical-spacing;
+        text-shadow: 2px 2px 4px $dark-shadow-color;
+    }
+
+    p {
+        font-size: $subtitle-font-size;
+        margin-bottom: $item-vertical-spacing;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .form-group {
+            width: 100%;
+            margin-bottom: $item-vertical-spacing;
+            text-align: left;
+
+            label {
+                font-size: $regular-font-size;
+                display: block;
+                margin-bottom: $margin;
+                color: $highlight-color;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: $item-padding;
+                border: 1px solid $highlight-text-color;
+                border-radius: $border-radius;
+                font-size: $regular-font-size;
+                box-shadow: $box-shadow;
+                transition: border-color 0.3s;
+
+                &:focus {
+                    border-color: $secondary-color;
+                    outline: none;
+                }
+            }
+        }
+
+        button {
+            background-color: $secondary-color;
+            color: $highlight-color;
+            border: none;
+            padding: $item-padding;
+            font-size: $regular-font-size;
+            cursor: pointer;
+            border-radius: $border-radius;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: $box-shadow;
+
+            &:hover {
+                background-color: $highlight-text-color;
+                transform: scale($hover-scale);
+            }
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

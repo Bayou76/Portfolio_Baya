@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
+import Home from './pages/Home/Home'
+import About from './pages/About/About'
+import Projets from './pages/Projets/Projets'
+import Contact from './pages/Contact/Contact'
+import Error from './pages/Error/Error'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+          <React.StrictMode>
+            <Router>
+            <Routes>
+              <Route path="/" element={<Navigate to="portfolio"/>}/>
+              <Route path="/portfolio" element={<Home/>}/>
+              <Route path="/about" element={<About/>}/>
+              <Route path="/projets" element={<Projets/>}/>
+              <Route path="/contact" element={<Contact/>}/>
+              <Route path="*" element={<Error/>}/>
+            </Routes>
+            </Router>
+          </React.StrictMode>
+        </div>
+      );
 }
 
 export default App;

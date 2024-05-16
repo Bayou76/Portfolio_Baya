@@ -1,0 +1,19 @@
+{
+    "frontEnd": [
+      { "iconName": "html5", "name": "HTML5" },
+      { "iconName": "css3", "name": "CSS3" },
+      { "iconName": "js", "name": "JavaScript" },
+      { "iconName": "react", "name": "React" },
+      { "iconName": "bootstrap", "name": "Bootstrap" },
+      { "iconName": "sass", "name": "Sass" }
+    ],
+    "backEnd": [
+      { "iconName": "php", "name": "PHP" },
+      { "iconName": "database", "name": "MySQL" }
+    ],
+    "other": [
+      { "iconName": "figma", "name": "Figma" },
+      { "iconName": "trello", "name": "Trello" }
+    ]
+  }
+  

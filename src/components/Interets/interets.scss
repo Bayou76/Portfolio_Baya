@@ -1,0 +1,100 @@
+@import '../../sass/main.scss';
+
+.interets-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: $padding;
+    background-color: $primary-color;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideIn 0.8s ease forwards;
+
+    h2 {
+        font-size: $title-font-size;
+        margin-bottom: $margin;
+        background: linear-gradient(to right, $secondary-color, $highlight-color);
+        background-clip: text; 
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        transition: font-size 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            font-size: 52px;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-top: $margin;
+
+        li {
+            margin-bottom: 30px;
+            padding: $padding;
+            background-color: $secondary-color;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            transform: translateY(20px);
+            opacity: 0;
+
+            strong{
+                font-size: $subtitle-font-size;
+                color: $primary-color;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            p{
+                font-size: $subtitle-font-size;
+            }
+
+            &:nth-child(even) {
+                background-color: $light-background-color;
+            }
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            &:nth-child(1) {
+                animation: fadeIn 0.5s ease forwards 0.3s;
+            }
+
+            &:nth-child(2) {
+                animation: fadeIn 0.5s ease forwards 0.6s;
+            }
+
+            &:nth-child(3) {
+                animation: fadeIn 0.5s ease forwards 0.9s;
+            }
+        }
+    }
+
+    // Animation
+    @keyframes slideIn {
+        from {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}

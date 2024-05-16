@@ -1,0 +1,95 @@
+@import '../../sass/main.scss';
+
+.competence-container {
+    width: 100%;
+    text-align: center;
+    height: 780px;
+    margin: 0 auto;
+    background-color: $primary-color; 
+    padding: $padding; 
+    border-radius: $border-radius; 
+    box-shadow: $box-shadow; 
+    overflow-y: auto;
+
+    h2 {
+        font-size: $title-font-size; 
+        margin-bottom: $margin; 
+        background: $gradient; 
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 2px 2px 4px $dark-shadow-color;
+        transition: font-size 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            font-size: 52px;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            text-align: center;
+            margin: $item-margin;
+            margin-bottom: $item-vertical-spacing;
+            padding: $item-padding;
+            background-color: $light-background-color;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            h3{
+                font-size: $subtitle-font-size;
+                color: $text-color; 
+                font-weight: 800;
+                text-shadow: 2px 2px 4px $dark-shadow-color;
+            }
+
+            &:nth-child(even) {
+                background-color: $secondary-color;;
+            }
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .icons{
+                margin-top: $margin;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .icon {
+                margin-top: $margin;
+                font-size: 4rem;
+                color: $primary-color;
+                transition: transform 0.3s;
+
+                &:hover {
+                    color: rgb(2, 3, 42);
+                    transform: rotate(720deg);
+                }
+            }
+
+            span {
+                display: block;
+                font-size: $regular-font-size;
+            }
+        }
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}
