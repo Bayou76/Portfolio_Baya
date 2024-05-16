@@ -12,7 +12,7 @@ function App() {
           <React.StrictMode>
             <Router>
             <Routes>
-              <Route path="/" element={<Navigate to="portfolio"/>}/>
+              <Route path="" element={<Navigate to="portfolio"/>}/>
               <Route path="/portfolio" element={<Home/>}/>
               <Route path="/about" element={<About/>}/>
               <Route path="/projets" element={<Projets/>}/>
