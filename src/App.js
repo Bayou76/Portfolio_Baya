@@ -13,7 +13,7 @@ function App() {
                 <Router>
                     <Routes>
                         <Route path="/" element={<Navigate to="/portfolio_baya" />} />
-                        <Route path="/portfolio" element={<Home />} />
+                        <Route path="/portfolio_baya" element={<Home />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/projets" element={<Projets />} />
                         <Route path="/contact" element={<Contact />} />
