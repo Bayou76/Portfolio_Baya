@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Portfolio_Baya.git/static/css/main.2a01369e.css",
-    "main.js": "/Portfolio_Baya.git/static/js/main.46069314.js",
-    "static/media/lespetitsplat.png": "/Portfolio_Baya.git/static/media/lespetitsplat.49d9820dd637170ffe08.png",
-    "static/media/kasa.png": "/Portfolio_Baya.git/static/media/kasa.7584d6ed816cb83ef8b9.png",
-    "static/media/IMG_0795.png": "/Portfolio_Baya.git/static/media/IMG_0795.1bab8f2e5e40a55bc71a.png",
-    "static/media/fisheye.png": "/Portfolio_Baya.git/static/media/fisheye.a4532af31879c05aad95.png",
-    "static/media/ohmyfood.png": "/Portfolio_Baya.git/static/media/ohmyfood.3600bc9657c06a7b0811.png",
-    "index.html": "/Portfolio_Baya.git/index.html",
-    "main.2a01369e.css.map": "/Portfolio_Baya.git/static/css/main.2a01369e.css.map",
-    "main.46069314.js.map": "/Portfolio_Baya.git/static/js/main.46069314.js.map"
+    "main.css": "/Portfolio_Baya/static/css/main.2a01369e.css",
+    "main.js": "/Portfolio_Baya/static/js/main.362529ed.js",
+    "static/media/lespetitsplat.png": "/Portfolio_Baya/static/media/lespetitsplat.49d9820dd637170ffe08.png",
+    "static/media/kasa.png": "/Portfolio_Baya/static/media/kasa.7584d6ed816cb83ef8b9.png",
+    "static/media/IMG_0795.png": "/Portfolio_Baya/static/media/IMG_0795.1bab8f2e5e40a55bc71a.png",
+    "static/media/fisheye.png": "/Portfolio_Baya/static/media/fisheye.a4532af31879c05aad95.png",
+    "static/media/ohmyfood.png": "/Portfolio_Baya/static/media/ohmyfood.3600bc9657c06a7b0811.png",
+    "index.html": "/Portfolio_Baya/index.html",
+    "main.2a01369e.css.map": "/Portfolio_Baya/static/css/main.2a01369e.css.map",
+    "main.362529ed.js.map": "/Portfolio_Baya/static/js/main.362529ed.js.map"
   },
   "entrypoints": [
     "static/css/main.2a01369e.css",
-    "static/js/main.46069314.js"
+    "static/js/main.362529ed.js"
   ]
 }
